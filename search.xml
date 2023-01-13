@@ -4,52 +4,27 @@
   
     
     <entry>
-      <title>图例</title>
-      <link href="/post/2f7a5d8.html"/>
-      <url>/post/2f7a5d8.html</url>
+      <title>Android通过ADB降级安装应用</title>
+      <link href="/post/6ed07e0b.html"/>
+      <url>/post/6ed07e0b.html</url>
       
-        <content type="html"><![CDATA[<img src="https://s1.ax1x.com/2022/11/09/xzUtk8.jpg" alt="PinkGirl" title="PinkGirl" border="0" />]]></content>
+        <content type="html"><![CDATA[<h2 id="下载ADB"><a href="#下载ADB" class="headerlink" title="下载ADB"></a>下载ADB</h2><p>adb下载地址为：  </p><ul><li><a href="https://adbdownload.com/">ADB Download - Get the latest version of ADB and fastboot</a></li><li><a href="https://developer.android.com/studio/releases/platform-tools">SDK 平台工具版本说明  | Android 开发者  | Android Developers</a></li></ul><h2 id="解压到任意文件夹"><a href="#解压到任意文件夹" class="headerlink" title="解压到任意文件夹"></a>解压到任意文件夹</h2><ol><li>进入到<code>platform-tools</code>目录，可以看到目录下有<code>adb.exe</code></li></ol><p><a href="https://imgse.com/i/pSKczxf"><img src="https://s1.ax1x.com/2023/01/13/pSKczxf.png" alt="pSKczxf.png"></a></p><ol start="2"><li>在地址栏输入<code>cmd</code>并回车</li></ol><p><a href="https://imgse.com/i/pSKgiZQ"><img src="https://s1.ax1x.com/2023/01/13/pSKgiZQ.png" alt="pSKgiZQ.png"></a></p><ol start="3"><li>输入<code>adb</code>紧接着出现以下内容</li></ol><p><a href="https://imgse.com/i/pSKgYz6"><img src="https://s1.ax1x.com/2023/01/13/pSKgYz6.png" alt="pSKgYz6.png" style="zoom: 67%;" /></a></p><h2 id="进入手机开发者模式"><a href="#进入手机开发者模式" class="headerlink" title="进入手机开发者模式"></a>进入手机开发者模式</h2><p>打开<code>USB调试</code>和<code>USB安装</code>并将手机和电脑用数据线连接</p><p><a href="https://imgse.com/i/pSK2FOO"><img src="https://s1.ax1x.com/2023/01/13/pSK2FOO.png" alt="pSK2FOO.png" style="zoom:67%;" /></a></p><h2 id="回到电脑控制台"><a href="#回到电脑控制台" class="headerlink" title="回到电脑控制台"></a>回到电脑控制台</h2><ol><li><p>控制台输入<code>adb devices</code>，手机会弹出</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb devices</span><br></pre></td></tr></table></figure></li></ol><p><a href="https://imgse.com/i/pSK2O3t"><img src="https://s1.ax1x.com/2023/01/13/pSK2O3t.png" alt="pSK2O3t.png" style="zoom:67%;" /></a></p><ol start="2"><li>点击确定即可</li><li>控制台再次输入<code>adb devices</code>，会出现</li></ol><p><a href="https://imgse.com/i/pSKRFCn"><img src="https://s1.ax1x.com/2023/01/13/pSKRFCn.png" alt="pSKRFCn.png"></a></p><ol start="4"><li>说明手机已经连接成功</li></ol><h2 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h2><ol><li><p>直接安装应用</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb install D:\demo.apk</span><br></pre></td></tr></table></figure></li><li><p>如果需要替换原来的应用，上面的安装命令是行不通的，需要加上“-r”，即替换原来的应用</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb install -r D:\demo.apk</span><br></pre></td></tr></table></figure></li><li><p>那如果是降级安装，再加“-d”</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb install -r -d D:\demo.apk</span><br></pre></td></tr></table></figure><p>这里的“r”指的是“replace”，替换原来的应用；“-d”指的是“downgrade”，降级安装。</p></li><li><p>成功安装后控制台打印 <code>Success</code></p></li></ol><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>如果出现 <code>Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]</code>是由于没有打开<code>USB安装</code></p><h2 id="QQ安装包"><a href="#QQ安装包" class="headerlink" title="QQ安装包"></a>QQ安装包</h2><p>本人是为了降级安装QQ，故提供<code>QQ-V8.8.5.apk</code>安装包地址</p><p><a href="https://www.shouji.com.cn/down/21530.html">手机 QQ APP下载-手机QQ官方客户端</a></p>]]></content>
       
       
       <categories>
           
-          <category> 图片 </category>
+          <category> 实用技术 </category>
+          
+          <category> 手机 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 图片 </tag>
+            <tag> Android </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo+github搭建个人博客</title>
-      <link href="/post/be8880ea.html"/>
-      <url>/post/be8880ea.html</url>
-      
-        <content type="html"><![CDATA[<img src="https://s1.ax1x.com/2022/11/09/xzUpYF.jpg" alt="鞠婧祎" title="鞠婧祎" border="0" />]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 图片 </tag>
-            
-            <tag> 鞠婧祎 </tag>
-            
-            <tag> 古装 </tag>
+            <tag> ADB </tag>
             
         </tags>
       
