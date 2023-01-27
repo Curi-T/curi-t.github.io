@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Git命令报错解决办法</title>
+      <link href="/post/37307b6d.html"/>
+      <url>/post/37307b6d.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="OpenSSL-SSL-read-Connection-was-aborted-errno-10053"><a href="#OpenSSL-SSL-read-Connection-was-aborted-errno-10053" class="headerlink" title="OpenSSL SSL_read: Connection was aborted, errno 10053"></a>OpenSSL SSL_read: Connection was aborted, errno 10053</h2><p>解决办法:</p><ol><li><p>Git默认限制推送的大小，运行命令更改限制大小即可 增加缓冲</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postBuffer 524288000 </span><br></pre></td></tr></table></figure></li><li><p>更改网络认证设置</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerify &quot;false&quot;</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 问题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Js农历阳历日期转换</title>
       <link href="/post/4bec7efa.html"/>
       <url>/post/4bec7efa.html</url>
