@@ -64,7 +64,7 @@ var bszCaller, bszTag, site_a, site_b;
 function site() {
     var bszs = ["site_pv", "page_pv", "site_uv"];
     bszs.map(function (bszs) {
-        console.log(bszs)
-        console.log(site_a[bszs])
+        console.log(bszs);
+        console.log(site_a[bszs]);
     })
 }
